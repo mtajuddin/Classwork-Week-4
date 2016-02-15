@@ -1,0 +1,36 @@
+/** size(400, 400);
+background(255);
+
+int i = 0;
+int j = 0;
+
+while (i < 24) {
+  j = 0;
+  while (j < 24) {
+    int x = 20 + i*15;
+    int y = 20 + i*15;
+    ellipse(x, y, 10, 10);
+    j++;
+  }
+  i++;
+}
+*/
+
+//Change the variable for x and y so that the values change at different time so the ellipses stop being drawn in a slanted row.
+
+size(400, 400);
+background(255);
+
+int i = 0;
+int j = 0;
+
+while (i < 24) {
+  j = 0;
+  while (j < 24) {
+    int x = 20 + i*15;
+    int y = 20 + j*15;
+    ellipse(x, y, 10, 10);
+    j++;
+  }
+  i++;
+}
