@@ -1,0 +1,20 @@
+/*
+Practice Two. What's the last value of j here? counter? How many rects get drawn? Calculate manually, then confirm with println
+*/
+
+int i = 5;
+int j = 10;
+int counter = 0;
+while (i < 97) {
+  j = 10;
+  while (j < 97) {
+    rect(5+i/2, 5+j/2, 3, 3);
+    counter = counter + 1;
+
+    j = j + 10;
+  }
+  i = i + 5;
+}
+
+//We could inculde rect in the println command but it would be easier to get the value of counter.
+
