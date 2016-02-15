@@ -1,0 +1,12 @@
+/*
+Practice One. What's the last value of i here? Calculate it manually, then confirm with a println
+*/
+
+int i = 7;
+while (i < 95) {
+  line(i, random(height), i, random(height));
+  i = i + 7;
+}
+println(counter);
+
+//the last value of i will be 98
